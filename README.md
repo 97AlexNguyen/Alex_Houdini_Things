@@ -1,5 +1,4 @@
-# [![](https://img.shields.io/badge/github-blue?style=for-the-badge)](https://github.com/hamzamohdzubair/redant)
-# $\color[RGB]{122, 255, 253} Houdini \ Packages \ and \ Python \ Module$ 
+# $\color[RGB]{122, 255, 253} A \ Houdini \ Packages \ and \ Python \ Module$ 
 
 >This is a method that enables loading of specific Python modules to Houdini without requiring any modification to the system environment variables. It utilizes a relative path technique which allows it to function on any computer and with any version of Houdini, as long as the Python version being used is compatible with that particular version of Houdini. Additionally, this method is easier to manage, especially when there are multiple Houdini packages involved.
 
