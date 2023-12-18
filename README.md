@@ -54,4 +54,34 @@ sys.path.append(python_lib)
 ```
 Test import module [See image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/test_load_module.png)
 
+# B : Python for HDA.
+
+## Call a definition using callback script .
+
+Create a definition in PythonModule (scripts tab).
+
+```Python
+def a_test(kwargs):
+    print("a_test")
+
+def b_test(kwargs):
+    print("b_test")
+```
+[Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/create_a_def.png)
+
+Then in a Button
+```Python
+hou.pwd().hdaModule().a_test(kwargs)
+```
+Can call a multi def like this :
+
+```Python
+hou.pwd().hdaModule().a_test(kwargs);hou.pwd().hdaModule().b_test(kwargs)
+```
+[Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/callback_script.png)
+
+
+
+
+
 
