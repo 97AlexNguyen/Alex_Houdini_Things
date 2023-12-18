@@ -5,6 +5,8 @@
 
 ## 1. Create a [Houdini packages](https://www.sidefx.com/docs/houdini/ref/plugins.html)
 
+Create a json file :
+
 ```json
 {
     "enable": true,
