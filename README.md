@@ -27,7 +27,9 @@ $$\LaTeX$$
 
 
 
-# **A : Create and load a packages in houdini (No need to edit the system environment variables ).** 
+# **A ** 
+
+$\textcolor{olive}{\TeX} \ \textcolor{darkgray}{Create and load a packages in houdini (No need to edit the system environment variables ).}$
 
 >This is a method that enables loading of specific Python modules to Houdini without requiring any modification to the system environment variables. It utilizes a relative path technique which allows it to function on any computer and with any version of Houdini, as long as the Python version being used is compatible with that particular version of Houdini. Additionally, this method is easier to manage, especially when there are multiple Houdini packages involved.
 
