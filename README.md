@@ -1,5 +1,4 @@
-# Create and load a packages to houdini . 
-
+# **A : Create and load a packages to houdini.** 
 
 ## 1. Create a [Houdini packages](https://www.sidefx.com/docs/houdini/ref/plugins.html)
 
@@ -21,9 +20,13 @@
 
 
 ## 2. Auto Load Python module every session houdini (Relative path)
-In Houdini, there is a script file named is [456.py](https://www.sidefx.com/docs/houdini/hom/locations.html).
+In Houdini, there is a script file named is [456.py](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/load_456py.png).
 Houdini runs this script whenever a scene file is loaded (including when Houdini starts up with a scene file).
+We can use this method to load a module python to every session houdini . 
+Create a 456.py then put it in houdini.xx\packages\test_packages\scripts
 
+In 456.py 
+[See Image]()
 ```python
 import hou
 import os
@@ -46,4 +49,6 @@ houdini_packages_document = houdini_document + "/packages/test_packages"
 ## All python module here . 
 python_lib = houdini_packages_document + "/Python/site-packages"
 
+## load python module via sys append.
+sys.path.append(python_lib)
 ```
