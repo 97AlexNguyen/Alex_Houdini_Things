@@ -1,3 +1,5 @@
+>To Using test packages , download the latest version of repo then extrac all file to packages for . All folder and file need to be inside packages folder not in a folder of a packages folder.
+
 # $\color[RGB]{122, 255, 253} A \ : \ Houdini \ Packages \ and \ Python \ Module$ 
 
 
