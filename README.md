@@ -2,7 +2,8 @@
 
 
 ## 1. Create a [Houdini packages](https://www.sidefx.com/docs/houdini/ref/plugins.html)
->```json
+>```
+```json
 {
     "enable": true,
     "path": "$HOUDINI_PACKAGE_PATH/test_packages",    
@@ -14,6 +15,7 @@
     ]
 }
 
+```
 ```
 
 
