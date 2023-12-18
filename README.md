@@ -1,6 +1,6 @@
 ![Houdini Logo](https://static.sidefx.com/images/ui/sfx_logo.svg)
 
-![Python Logo](https://www.python.org/static/community_logos/python-logo-generic.svg) ![Python Logo](https://www.python.org/static/community_logos/python-logo-generic.svg) 
+![Python Logo](https://www.python.org/static/community_logos/python-logo-generic.svg)
 
 # This is a document that I created for my personal use. It includes Python scripts and VEX as well. You can find a lot of useful information here, such as Python scripts for working with HDA, tips and tricks for parameter settings like toggle and button strip and etc. Please note that this document is not yet complete, but I will update it whenever I have some free time.
 
