@@ -1,5 +1,7 @@
 # **A : Create and load a packages in houdini (No need to edit the system environment variables ).** 
 
+This method is used to load certain Python modules to Houdini without the need to edit the system environment variables. It relies on a relative path method which makes it work on any computer and any version of Houdini, as long as that version of Houdini is compatible with the Python version being used.
+
 ## 1. Create a [Houdini packages](https://www.sidefx.com/docs/houdini/ref/plugins.html)
 
 ```json
