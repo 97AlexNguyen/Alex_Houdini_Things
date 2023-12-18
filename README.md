@@ -52,3 +52,6 @@ python_lib = houdini_packages_document + "/Python/site-packages"
 ## load python module via sys append.
 sys.path.append(python_lib)
 ```
+Test import module [See image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/test_load_module.png)
+
+
