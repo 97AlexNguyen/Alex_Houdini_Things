@@ -2,7 +2,7 @@
 
 
 ## 1. Create a [Houdini packages](https://www.sidefx.com/docs/houdini/ref/plugins.html)
->```
+
 ```json
 {
     "enable": true,
@@ -16,12 +16,6 @@
 }
 
 ```
-```
-
-
-
-
-
 
 
 ## 3. Load Python module (Relative path)
