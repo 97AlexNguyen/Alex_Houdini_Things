@@ -84,7 +84,7 @@ hou.pwd().hdaModule().a_test(kwargs);hou.pwd().hdaModule().b_test(kwargs)
 ```
 [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/callback_script.png)
 
-## Read paramater and get the value of parameter .
+## Read paramater and get the value of parameter . 
 
 > In the HDA module’s code, you can get a reference to the HDA’s node type using:
 
