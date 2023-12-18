@@ -28,7 +28,7 @@ Houdini runs this script whenever a scene file is loaded (including when Houdini
 We can use this method to load a module python to every session houdini . 
 Create a 456.py then put it in houdini.xx\packages\test_packages\scripts
 
-In 456.py 
+In [456.py](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/test_packages/scripts/456.py) 
 ```python
 import hou
 import os
