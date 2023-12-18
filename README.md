@@ -56,8 +56,9 @@ sys.path.append(python_lib)
 ```
 Test import module [See image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/test_load_module.png)
 
-# B : Python for HDA.
-$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
+# B :
+$${lightblue}To \space \color{orange} Python for HDA.}$$
+
 >You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
 
 ## Call a definition using callback script .
