@@ -11,7 +11,12 @@
 
 ## 1. Create a [Houdini packages](https://www.sidefx.com/docs/houdini/ref/plugins.html)
 
-Create a json file :
+A Houdini Package is like a main document where you can store HDAs, toolbars, Python modules, include codes, and more. This method is extremely helpful for those who want to maintain a clean Houdini document and wish to easily re-install it at a later time or share the package with someone who needs to use it.
+
+To create a Houdini package, you need to create a json file that saves the path to the package and loads it into Houdini. This json file is essential for using and sharing the package. The json file working with relative path so we dont need to care about name of pc or houdini version.
+
+
+Create a json file , :
 
 ```json
 {
