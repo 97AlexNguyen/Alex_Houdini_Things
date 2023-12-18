@@ -86,7 +86,7 @@ hou.pwd().hdaModule().a_test(kwargs);hou.pwd().hdaModule().b_test(kwargs)
 
 ## Read paramater and get the value of parameter . 
 
-> In the HDA module’s code, you can get a reference to the HDA’s node type using:
+> In the HDA module’s code, you can get a reference to the HDA’s node name using:
 
 ```Python
 node = kwargs["node"]
@@ -103,6 +103,50 @@ In callback script of button :
 hou.pwd().hdaModule()._kwargs(kwargs)
 ```
 [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/kwargs_node.png)
+
+## Get the value of parameter: 
+> "All parameters need to be identified by their 'name' rather than their 'label'."
+
+Create float and int parameters named "float_test" and "int_test".
+Create a def in PythonModule :
+```Python
+def load_parm(kwargs):
+    node = kwargs["node"]
+    _float = node.parm("float_test").eval()
+    _int = node.parm("int_test").eval()
+    print(_float)
+    print(_int)
+```
+Create a Button and in "Callback Script":
+```Python
+hou.pwd().hdaModule().load_parm(kwargs)
+```
+[Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/load_parm_hda.png)
+
+
+## Set the value of parameter: 
+
+Create float and int parameters named "float_test_for_set" and "int_test_for_set".
+Now we are using value of float_test and int_test to set value for float_test_for_set and int_test_for_set.
+
+```Python
+def set_parm_value(kwargs):
+    node = kwargs["node"]
+    _float = node.parm("float_test").eval()
+    _int = node.parm("int_test").eval()
+    ## Set value
+    node.parm("float_test_for_set").set(_float)
+    node.parm("int_test_for_set").set(_int)    
+```
+Then in callback script of a button :
+```Python
+hou.pwd().hdaModule().set_parm_value(kwargs)
+```
+[Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/set_parm.png)
+
+
+
+
 
 
 
