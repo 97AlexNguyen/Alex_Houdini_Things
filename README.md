@@ -1,8 +1,11 @@
 # Houdini python . 
 
 
+## 1. Create a [Houdini packages](https://www.sidefx.com/docs/houdini/ref/plugins.html)
 
-## 1. Load Python module (Relative path)
+
+
+## 3. Load Python module (Relative path)
 
 ```python
 import hou
