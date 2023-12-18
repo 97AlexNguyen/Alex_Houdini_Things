@@ -59,6 +59,9 @@ Test import module [See image](https://github.com/97AlexNguyen/Alex_Houdini_pyth
 # B :
 $${\color{lightgreen}Python for HDA.}$$
 
+> [!note]  
+> Highlights information that users should take into account, even when skimming.
+
 >You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
 
 ## Call a definition using callback script .
