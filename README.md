@@ -1,6 +1,19 @@
-# Hou_snippet 
+# Houdini python . 
 
-This is a tool for Houdini that allows to generate link to share snippets of nodes between users.
-It allows to quickly generate snippet network of the nodes you wish to transfer, serialize them and store them on github gists. 
-By sending the generated link or copying a link sent by another user you can serialize/deserialize the nodes from/to your houdini sessions. Allowing for an easy transfer of nodes/scenes between users.
-A video demo of the tool is available here: https://vimeo.com/554680574
+
+
+## 1. Load Python packages (Relative path)
+
+```python
+import hou
+import os
+import sys
+## Retrieve the current Houdini version when a Houdini session is opened.
+hou_version = hou.applicationVersion()
+hou_int_version = str(hou_version[0]) + "." + str(hou_version[1])
+current_document = os.path.join(os.environ['USERPROFILE'], 'Documents')
+current_document.replace("\\","/")
+houdini_split_version = "houdini"+hou_int_version
+
+
+```
