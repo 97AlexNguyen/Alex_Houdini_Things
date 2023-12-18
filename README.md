@@ -56,10 +56,7 @@ sys.path.append(python_lib)
 ```
 Test import module [See image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/test_load_module.png)
 
-# B :
-$${\color{lightgreen}Python for HDA.}$$
-
-
+# $\color[RGB]{122, 255, 253} B \ : \ Python \ for \ HDA $ 
 
 >You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
 
