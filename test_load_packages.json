@@ -1,0 +1,13 @@
+{
+    "enable": true,
+    "path": "$HOUDINI_PACKAGE_PATH/test_packages",
+
+    
+    "env": 
+    [
+        {
+            "HOUDINI_OTLSCAN_PATH": "$HOUDINI_PACKAGE_PATH/test_packages/hda;"
+        }
+
+    ]
+}
