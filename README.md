@@ -14,11 +14,15 @@
         }
     ]
 }
-
 ```
+[See Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/houdini_packages_json.png)
 
 
-## 3. Load Python module (Relative path)
+
+
+## 2. Auto Load Python module every session houdini (Relative path)
+In Houdini, there is a script file named is [456.py](https://www.sidefx.com/docs/houdini/hom/locations.html).
+Houdini runs this script whenever a scene file is loaded (including when Houdini starts up with a scene file).
 
 ```python
 import hou
