@@ -80,7 +80,7 @@ def b_test(kwargs):
 ```
 [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/create_a_def.png)
 
-Dont know what "kwargs" meaning ? . [Read this:](https://www.sidefx.com/docs/houdini/hom/locations.html)
+Dont know what "kwargs" meaning ? . [Read this](https://www.sidefx.com/docs/houdini/hom/locations.html)
 
 Then create a Button > Callback script (Work with any parameter like a float , int , toggle...)
 ```Python
