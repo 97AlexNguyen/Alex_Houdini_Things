@@ -14,8 +14,9 @@
         }
     ]
 }
-## [See Image : ](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/houdini_packages_json.png)
 ```
+[See Image : ](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/houdini_packages_json.png)
+
 
 
 
