@@ -1,4 +1,6 @@
-# **A : Create and load a packages to houdini.** 
+# **A : Create and load a packages in houdini (No need to edit the system environment variables ).** 
+
+>This method is used to load certain Python modules to Houdini without the need to edit the system environment variables. It relies on a relative path method which makes it work on any computer and any version of Houdini, as long as that version of Houdini is compatible with the Python version being used.
 
 ## 1. Create a [Houdini packages](https://www.sidefx.com/docs/houdini/ref/plugins.html)
 
@@ -53,5 +55,35 @@ python_lib = houdini_packages_document + "/Python/site-packages"
 sys.path.append(python_lib)
 ```
 Test import module [See image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/test_load_module.png)
+
+# B : Python for HDA.
+
+## Call a definition using callback script .
+
+Create a definition in PythonModule (scripts tab).
+
+```Python
+def a_test(kwargs):
+    print("a_test")
+
+def b_test(kwargs):
+    print("b_test")
+```
+[Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/create_a_def.png)
+
+Then in callback script Button (Work with any parameter like a float , int , toggle...)
+```Python
+hou.pwd().hdaModule().a_test(kwargs)
+```
+Can call a multi def like this :
+
+```Python
+hou.pwd().hdaModule().a_test(kwargs);hou.pwd().hdaModule().b_test(kwargs)
+```
+[Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/callback_script.png)
+
+
+
+
 
 
