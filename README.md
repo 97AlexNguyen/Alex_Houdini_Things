@@ -1,6 +1,5 @@
 # **A Create and load a packages to houdini.** 
 
-
 ## 1. Create a [Houdini packages](https://www.sidefx.com/docs/houdini/ref/plugins.html)
 
 ```json
