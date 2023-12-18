@@ -87,7 +87,6 @@ hou.pwd().hdaModule().a_test(kwargs);hou.pwd().hdaModule().b_test(kwargs)
 ## Read paramater and get the value of parameter .
 ```diff
 + In the HDA module’s code, you can get a reference to the HDA’s node type using:
-+ text in green
 ```
 ```Python
 node = kwargs["node"]
