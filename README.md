@@ -1,4 +1,4 @@
->To Using test packages , download the latest version of repo then extrac all file to packages for . All folder and file need to be inside packages folder not in a folder of a packages folder.
+>To use test packages, download the latest version of the repo and extract all files to the "packages" folder. All folders and files should be directly inside the "packages" folder, not within a subfolder of the "packages" folder.
 
 # $\color[RGB]{122, 255, 253} A \ : \ Houdini \ Packages \ and \ Python \ Module$ 
 
@@ -149,6 +149,7 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
 [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/set_parm.png)
 
 
+$\mathscr{\color{red}{Updating...}}$
 
 
 
