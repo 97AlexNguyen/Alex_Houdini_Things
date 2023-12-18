@@ -2,7 +2,7 @@
 
 
 
-## 1. Load Python packages (Relative path)
+## 1. Load Python module (Relative path)
 
 ```python
 import hou
@@ -21,7 +21,9 @@ houdini_document = current_document + "/" + houdini_split_version
 
 ##  Get Relative Path of houdini packages.
 ## Read about houdini packages form here https://www.sidefx.com/docs/houdini/ref/plugins.html
-houdini_packages_document = houdini_document + "/packages/Lyx_data"
+houdini_packages_document = houdini_document + "/packages/test_packages"
+
+## All python module here . 
 python_lib = houdini_packages_document + "/Python/site-packages"
 
 ```
