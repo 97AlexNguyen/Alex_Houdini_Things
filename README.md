@@ -21,7 +21,8 @@
 
 
 ## 2. Auto Load Python module every session houdini (Relative path)
-In Houdini, there is a script file named is [456.py](https://www.sidefx.com/docs/houdini/hom/locations.html). \n
+In Houdini, there is a script file named is [456.py](https://www.sidefx.com/docs/houdini/hom/locations.html).
+
 Houdini runs this script whenever a scene file is loaded (including when Houdini starts up with a scene file).
 
 ```python
