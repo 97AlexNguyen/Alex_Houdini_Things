@@ -80,7 +80,7 @@ def b_test(kwargs):
 ```
 [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/create_a_def.png)
 
-Then in callback script Button (Work with any parameter like a float , int , toggle...)
+Then create a Button > Callback script (Work with any parameter like a float , int , toggle...)
 ```Python
 hou.pwd().hdaModule().a_test(kwargs)
 ```
