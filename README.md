@@ -26,7 +26,7 @@ ____________________________________ ![Python Logo](https://www.python.org/stati
 
 >This is a method that enables loading of specific Python modules to Houdini without requiring any modification to the system environment variables. It utilizes a relative path technique which allows it to function on any computer and with any version of Houdini, as long as the Python version being used is compatible with that particular version of Houdini. Additionally, this method is easier to manage, especially when there are multiple Houdini packages involved.
 
-## 1. Create a [Houdini packages](https://www.sidefx.com/docs/houdini/ref/plugins.html)
+## 1 : Create a [Houdini packages](https://www.sidefx.com/docs/houdini/ref/plugins.html)
 
 A Houdini Package is like a main document where you can store HDAs, toolbars, Python modules, include codes, and more. This method is extremely helpful for those who want to maintain a clean Houdini document and wish to easily re-install it at a later time or share the package with someone who needs to use it.
 
@@ -52,7 +52,7 @@ Create a json file , :
 
 
 
-## 2. Auto Load Python module in every houdini session (Relative path)
+## 2 : Auto Load Python module in every houdini session (Relative path)
 In Houdini, there is a script file named is [456.py](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/load_456py.png).
 Houdini runs this script whenever a scene file is loaded (including when Houdini starts up with a scene file).
 We can use this method to load a module python to every session houdini . 
@@ -88,7 +88,7 @@ Test import module [See image](https://github.com/97AlexNguyen/Alex_Houdini_pyth
 
 >You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
 
-## Call a definition using callback script .
+## 3 : Call a definition using callback script .
 
 Create a definition in PythonModule (scripts tab).
 
@@ -114,7 +114,7 @@ hou.pwd().hdaModule().a_test(kwargs);hou.pwd().hdaModule().b_test(kwargs)
 ```
 [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/callback_script.png)
 
-## Read paramater and get the value of parameter . 
+## 4 : Read paramater and get the value of parameter . 
 
 > In the HDA module’s code, you can get a reference to the HDA’s node name using:
 
@@ -134,7 +134,7 @@ hou.pwd().hdaModule()._kwargs(kwargs)
 ```
 [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/kwargs_node.png)
 
-## Get the value of parameter: 
+## 5 :Get the value of parameter: 
 > "All parameters need to be identified by their 'name' rather than their 'label'."
 
 Create float and int parameters named "float_test" and "int_test".
@@ -154,7 +154,7 @@ hou.pwd().hdaModule().load_parm(kwargs)
 [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/load_parm_hda.png)
 
 
-## Set the value of parameter: 
+## 6 : Set the value of parameter: 
 
 Create float and int parameters named "float_test_for_set" and "int_test_for_set".
 Now we are using value of float_test and int_test to set value for float_test_for_set and int_test_for_set.
