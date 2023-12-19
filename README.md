@@ -1,6 +1,6 @@
 ![Houdini Logo](https://static.sidefx.com/images/ui/sfx_logo.svg)
 ![Unreal Logo](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/logo/UE_Logo_horizontal_unreal-engine_white.svg)
-$\color[RGB]{122, 255, 253} _____________________________$  # ![Python Logo](https://www.python.org/static/community_logos/python-logo-generic.svg)
+![Python Logo](https://www.python.org/static/community_logos/python-logo-generic.svg)
 
 
 
