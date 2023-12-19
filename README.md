@@ -110,7 +110,7 @@ Test import module [See image](https://github.com/97AlexNguyen/Alex_Houdini_pyth
 
 
 ### Something fun with 456.py
-How to auto turn on auto save , set fps , realtime , frame range...
+How to turn on auto save , set fps , realtime , frame range... in every houdini session
 ```Python
 import sys
 import os
