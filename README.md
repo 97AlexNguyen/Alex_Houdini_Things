@@ -41,17 +41,14 @@
 
 
 
+# $\color[RGB]{122, 255, 253} A \ : \ Houdini \ HDA \ and \ Python \ Module$ 
 
 > All examples you can find in "Test HDA"
 >To use test packages, download the latest version of the repo and extract all files to the "packages" folder. All folders and files should be directly inside the "packages" folder, not within a subfolder of the "packages" folder.
 
-
-# $\color[RGB]{122, 255, 253} A \ : \ Houdini \ HDA \ and \ Python \ Module$ 
-
+## 1 : Create a [Houdini packages](https://www.sidefx.com/docs/houdini/ref/plugins.html)
 
 >This is a method that enables loading of specific Python modules to Houdini without requiring any modification to the system environment variables. It utilizes a relative path technique which allows it to function on any computer and with any version of Houdini, as long as the Python version being used is compatible with that particular version of Houdini. Additionally, this method is easier to manage, especially when there are multiple Houdini packages involved.
-
-## 1 : Create a [Houdini packages](https://www.sidefx.com/docs/houdini/ref/plugins.html)
 
 A Houdini Package is like a main document where you can store HDAs, toolbars, Python modules, include codes, and more. This method is extremely helpful for those who want to maintain a clean Houdini document and wish to easily re-install it at a later time or share the package with someone who needs to use it.
 
