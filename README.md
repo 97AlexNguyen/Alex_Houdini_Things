@@ -35,17 +35,16 @@
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://unrealengine.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" alt="unreal" width="40" height="40"/> </a> <a href="https://www.sidefx.com/" target="_blank" rel="noreferrer"> <img src="https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/logo/sidefx_badge.png" alt="houdini" width="40" height="40"/> </a> </p>
 
- <div align="center">
+<div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=97AlexNguyen&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
 </div>
 
 
 
-
+<div align="center">
 > All examples you can find in "Test HDA"
-
 >To use test packages, download the latest version of the repo and extract all files to the "packages" folder. All folders and files should be directly inside the "packages" folder, not within a subfolder of the "packages" folder.
-
+</div>
 # $\color[RGB]{122, 255, 253} A \ : \ Houdini \ HDA \ and \ Python \ Module$ 
 
 
