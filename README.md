@@ -24,6 +24,8 @@
 <a href="https://fb.com/nguyenvuquocan" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="nguyenvuquocan" height="30" width="40" /></a>
 </p>
 
+- 📫 How to reach me **8197alexnguyen@gmail.com**
+
 - 👯 Pm me If you want to collaborate on [this repo](https://github.com/97AlexNguyen/Alex_Houdini_Things/tree/main) 
 
 <h3 align="left">Languages and Tools:</h3>
