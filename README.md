@@ -21,7 +21,7 @@
 
 >To use test packages, download the latest version of the repo and extract all files to the "packages" folder. All folders and files should be directly inside the "packages" folder, not within a subfolder of the "packages" folder.
 
-# $\color[RGB]{122, 255, 253} A \ : \ Houdini \ Packages \ and \ Python \ Module$ 
+# $\color[RGB]{122, 255, 253} A \ : \ Houdini \ Packages \ HDA \ and \ Python \ Module$ 
 
 
 >This is a method that enables loading of specific Python modules to Houdini without requiring any modification to the system environment variables. It utilizes a relative path technique which allows it to function on any computer and with any version of Houdini, as long as the Python version being used is compatible with that particular version of Houdini. Additionally, this method is easier to manage, especially when there are multiple Houdini packages involved.
@@ -85,8 +85,6 @@ python_lib = houdini_packages_document + "/Python/site-packages"
 sys.path.append(python_lib)
 ```
 Test import module [See image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/test_load_module.png)
-
-# $\color[RGB]{122, 255, 253} B \ : \ Python \ for \ HDA $ 
 
 >You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
 
@@ -182,6 +180,6 @@ $\mathscr{\color{red}{Updating...}}$
 
 
 
-
+# $\color[RGB]{122, 255, 253} B \ : \ Houdini \ for \ Unreal Engine $ 
 
 
