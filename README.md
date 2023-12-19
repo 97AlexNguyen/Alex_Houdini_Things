@@ -19,7 +19,7 @@
 
 - [@97AlexNguyen](https://github.com/97AlexNguyen)
 
-<h3 align="center">🔭 This is a document that I created for my personal use. It includes Python scripts , VEX , python qt , VFX like RBD sim , Vellum Sim , and working with unreal engine as well. You can find a lot of useful information here, such as Python scripts for working with HDA, tips and tricks for parameter settings like toggle and button strip and etc. Please note that this document is not yet complete, but I will update it whenever I have some free time </h3>
+<h3 align="center">🔭 This is a document that I created for my personal use. It includes Python scripts , VEX , python qt , Math , VFX like RBD sim , Vellum Sim , and working with unreal engine as well. You can find a lot of useful information here, such as Python scripts for working with HDA, tips and tricks for parameter settings like toggle and button strip and etc. Please note that this document is not yet complete, but I will update it whenever I have some free time </h3>
 
  
 <h3 align="left">Connect with me:</h3>
@@ -227,7 +227,7 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
 
 # $\color[RGB]{122, 255, 253} E \ : \ Houdini \ for \ Unreal Engine$ 
 
-
+# $\color[RGB]{122, 255, 253} E \ : \ Houdini \ Math$ 
 
 
 $\mathscr{\color{red}{Updating...}}$
