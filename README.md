@@ -62,9 +62,9 @@ Create a 456.py then put it in houdini.xx\packages\test_packages\scripts
 
 In [456.py](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/test_packages/scripts/456.py) 
 ```python
-import hou
 import os
 import sys
+import hou
 ## Retrieve the current Houdini version when a Houdini session is opened.
 hou_version = hou.applicationVersion()
 hou_int_version = str(hou_version[0]) + "." + str(hou_version[1])
