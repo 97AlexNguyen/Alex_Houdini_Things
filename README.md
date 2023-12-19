@@ -43,6 +43,8 @@
 
 # $\color[RGB]{122, 255, 253} A \ : \ Houdini \ HDA \ and \ Python \ Module$ 
 
+> You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
+
 > All examples you can find in "Test HDA"
 >To use test packages, download the latest version of the repo and extract all files to the "packages" folder. All folders and files should be directly inside the "packages" folder, not within a subfolder of the "packages" folder.
 
@@ -125,15 +127,7 @@ hou.playbar.setRealTime("On")
 hou.setFps(30.0)
 ## Set Frame Range
 hou.playbar.setFrameRange(1.0,100.0)
-
-
-
-
 ```
-
-
-
->You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
 
 ## 3 : Call a definition using callback script .
 
