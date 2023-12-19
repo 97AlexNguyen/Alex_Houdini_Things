@@ -21,7 +21,7 @@ ____________________________________ ![Python Logo](https://www.python.org/stati
 
 >To use test packages, download the latest version of the repo and extract all files to the "packages" folder. All folders and files should be directly inside the "packages" folder, not within a subfolder of the "packages" folder.
 
-# $\color[RGB]{122, 255, 253} A \ : \ Houdini \ Packages \ HDA \ and \ Python \ Module$ 
+# $\color[RGB]{122, 255, 253} A \ : \ Houdini \ HDA \ and \ Python \ Module$ 
 
 
 >This is a method that enables loading of specific Python modules to Houdini without requiring any modification to the system environment variables. It utilizes a relative path technique which allows it to function on any computer and with any version of Houdini, as long as the Python version being used is compatible with that particular version of Houdini. Additionally, this method is easier to manage, especially when there are multiple Houdini packages involved.
@@ -175,11 +175,31 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
 [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/set_parm.png)
 
 
+# $\color[RGB]{122, 255, 253} B \ : \ Houdini \ for \ Unreal Engine $ 
+
+
+# $\color[RGB]{122, 255, 253} C \ : \ Python Qt \ for \ Houdini e $ 
+
+
+# $\color[RGB]{122, 255, 253} D \ : \ RBD \ in \ Houdini e $ 
+
+
+# $\color[RGB]{122, 255, 253} E \ : \ Vellum \ sim \ in \ Houdini e $ 
+
+
+
+
 $\mathscr{\color{red}{Updating...}}$
 
 
 
 
-# $\color[RGB]{122, 255, 253} B \ : \ Houdini \ for \ Unreal Engine $ 
+
+
+
+
+
+
+
 
 
