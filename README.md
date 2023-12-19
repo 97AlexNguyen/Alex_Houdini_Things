@@ -15,7 +15,7 @@
 
 
 
-# This is a document that I created for my personal use. It includes Python scripts and VEX as well. You can find a lot of useful information here, such as Python scripts for working with HDA, tips and tricks for parameter settings like toggle and button strip and etc. Please note that this document is not yet complete, but I will update it whenever I have some free time.
+# This is a document that I created for my personal use. It includes Python scripts , VEX , python qt , and working with unreal engine as well. You can find a lot of useful information here, such as Python scripts for working with HDA, tips and tricks for parameter settings like toggle and button strip and etc. Please note that this document is not yet complete, but I will update it whenever I have some free time.
 
 > All examples you can find in "Test HDA"
 
