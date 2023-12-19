@@ -176,16 +176,16 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
 [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/set_parm.png)
 
 
-# $\color[RGB]{122, 255, 253} B \ : \ Houdini \ for \ Unreal Engine $ 
+# $\color[RGB]{122, 255, 253} B \ : \ Houdini \ for \ Unreal Engine$ 
 
 
-# $\color[RGB]{122, 255, 253} C \ : \ Python Qt \ for \ Houdini e $ 
+# $\color[RGB]{122, 255, 253} C \ : \ Python Qt \ for \ Houdini$ 
 
 
-# $\color[RGB]{122, 255, 253} D \ : \ RBD \ in \ Houdini e $ 
+# $\color[RGB]{122, 255, 253} D \ : \ RBD \ in \ Houdini$ 
 
 
-# $\color[RGB]{122, 255, 253} E \ : \ Vellum \ sim \ in \ Houdini e $ 
+# $\color[RGB]{122, 255, 253} E \ : \ Vellum \ sim \ in \ Houdini$ 
 
 
 
