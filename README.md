@@ -108,6 +108,31 @@ sys.path.append(python_lib)
 ```
 Test import module [See image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/test_load_module.png)
 
+
+### Something fun with 456.py
+How to auto turn on auto save , set fps , realtime , frame range...
+```Python
+import sys
+import os
+import hou
+##  auto save
+hou.appendSessionModuleSource('''hou.hscript("autosave on")''')
+## Set auto save every 10 Minutes
+hou.setPreference('general.autosaveinterval.val','10')
+## Set RealTime On
+hou.playbar.setRealTime("On")
+## Set Fps
+hou.setFps(30.0)
+## Set Frame Range
+hou.playbar.setFrameRange(1.0,100.0)
+
+
+
+
+```
+
+
+
 >You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
 
 ## 3 : Call a definition using callback script .
