@@ -41,10 +41,11 @@
 
 
 
-<div align="center">
+
 > All examples you can find in "Test HDA"
 >To use test packages, download the latest version of the repo and extract all files to the "packages" folder. All folders and files should be directly inside the "packages" folder, not within a subfolder of the "packages" folder.
-</div>
+
+
 # $\color[RGB]{122, 255, 253} A \ : \ Houdini \ HDA \ and \ Python \ Module$ 
 
 
