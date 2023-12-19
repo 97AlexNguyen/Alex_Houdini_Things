@@ -5,7 +5,6 @@
 ![Python Logo](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/logo/python_and_qt_logo.svg)
 
 
-
 <p align="center">
    <a href="https://github.com/97AlexNguyen">
     <img alt="Website" src="https://img.shields.io/website?label=main%20project&up_message=Community%20Projects&url=https%3A%2F%2Fgithub.com%2Fnitzan-treg%2Fcommunity_projects">
