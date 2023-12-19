@@ -15,6 +15,10 @@
   </a>
 </p>
 
+
+<h3 align="center">🔭 This is a document that I created for my personal use. It includes Python scripts , VEX , python qt , VFX like RBD sim , Vellum Sim , and working with unreal engine as well. You can find a lot of useful information here, such as Python scripts for working with HDA, tips and tricks for parameter settings like toggle and button strip and etc. Please note that this document is not yet complete, but I will update it whenever I have some free time </h3>
+
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://fb.com/quốc ân" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="quốc ân" height="30" width="40" /></a>
@@ -23,8 +27,6 @@
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://unrealengine.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" alt="unreal" width="40" height="40"/> </a> </p>
 
-
-<h3 align="center">🔭 This is a document that I created for my personal use. It includes Python scripts , VEX , python qt , VFX like RBD sim , Vellum Sim , and working with unreal engine as well. You can find a lot of useful information here, such as Python scripts for working with HDA, tips and tricks for parameter settings like toggle and button strip and etc. Please note that this document is not yet complete, but I will update it whenever I have some free time </h3>
 
 > All examples you can find in "Test HDA"
 
