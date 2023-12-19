@@ -27,7 +27,10 @@
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://unrealengine.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" alt="unreal" width="40" height="40"/> </a> <a href="https://www.sidefx.com/" target="_blank" rel="noreferrer"> <img src="https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/logo/sidefx_badge.png" alt="houdini" width="40" height="40"/> </a> </p>
 
+<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=97alexnguyen&show_icons=true&locale=en&layout=compact" alt="97alexnguyen" /></p>
+
 - 👯 Pm me If you want to collaborate on [this repo](https://github.com/97AlexNguyen/Alex_Houdini_Things/tree/main)
+
 
 
 > All examples you can find in "Test HDA"
