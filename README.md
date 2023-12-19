@@ -4,6 +4,7 @@
 
 ![Python Logo](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/logo/python_and_qt_logo.svg)
 
+![Main Logo](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/logo/Main_logo.svg)
 
 <p align="center">
    <a href="https://github.com/97AlexNguyen">
