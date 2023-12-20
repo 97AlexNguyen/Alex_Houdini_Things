@@ -277,9 +277,8 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
           value_select = node.parm("Button_strip_replace").eval()
           print(value_select)
       ```   
-   In Callback script of button strip :
+    In Callback script of button strip :
       ```Python
-  
       hou.pwd().hdaModule().replace_button_strip(kwargs)
       ```
   
