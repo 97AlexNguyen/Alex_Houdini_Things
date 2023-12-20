@@ -290,7 +290,19 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
        ![menu script](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/button_strip_single_select.png)
 
   + Multiple Selection :
+   > Working with multiple selections in a button strip is not as easy as working with a single selection. . The button strip returns a [Bit field](https://rb.gy/1b6b2m) value , 
+   > which means that we need to translate it into a more usable form , we can do that by this way : 
+      +
+      ```Python
+   
+        bitfield_list = [1, 0, 1, 1, 0, 0, 1]
+        value = (bitfield_value $ (index<<index-1))
+        for bit in bitfield_list:
+           result = (result << 1) | bit
 
+      ```
+   
+   
 
 
 
