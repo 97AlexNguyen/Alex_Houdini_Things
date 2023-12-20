@@ -330,7 +330,7 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
          hou.pwd().hdaModule().multiple_button_strip(kwargs)
       ```
     - And this is result :
-      [Multiple_selection](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/gif/multiple_section_example.gif)
+      ![Multiple_selection](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/gif/multiple_section_example.gif)
 
 
 
