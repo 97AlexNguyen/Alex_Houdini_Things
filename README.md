@@ -24,7 +24,7 @@
 
 > You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
 
-> All examples you can find in "Test HDA"
+> All examples you can find in ["Test HDA"](https://github.com/97AlexNguyen/Alex_Houdini_Things/tree/58b5f0697b660aca390d42ff69e0f789f65f5117/hip_exams)
 >To use test packages, download the latest version of the repo and extract all files to the "packages" folder. All folders and files should be directly inside the "packages" folder, not within a subfolder of the "packages" folder.
 
  
