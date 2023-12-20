@@ -291,28 +291,28 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
 
   + Multiple Selection :
     
-   - Working with multiple selections in a button strip is not as easy as working with a single selection. . The button strip returns a [Bit field]([https://rb.gy/1b6b2m](https://en.wikipedia.org/wiki/Bit_field#:~:text=A%20bit%20field%20is%20a,can%20be%20set%20or%20inspected.)) value , 
-   - which means that we need to translate it into a more usable form . This is an example to show how we can do that :
+    - Working with multiple selections in a button strip is not as easy as working with a single selection. . The button strip returns a [Bit field]([https://rb.gy/1b6b2m](https://en.wikipedia.org/wiki/Bit_field#:~:text=A%20bit%20field%20is%20a,can%20be%20set%20or%20inspected.)) value , 
+    - which means that we need to translate it into a more usable form . This is an example to show how we can do that :
    ![bitconvert](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/bitf_convert.png)
           
         bitfield_list = [1, 0, 1, 1, 0, 0, 1]
         for bit in bitfield_list:
            result = (result << 1) | bit
   
-   - Create a button strip and set name is : "Multiple_Select_Button" .
-   - Native to the menu , in menu option , switch to use : Toggle (Field + Multiple selection menu)
-   - In menu script :
-    ```Python
-    r = []
-    node = hou.pwd()
-    def menu():
-        r.extend([0, "A"])
-        r.extend([1, "B"])
-        r.extend([2, "C"])
-        return r
-    return menu()
-    
-    ```
+    - Create a button strip and set name is : "Multiple_Select_Button" .
+    - Native to the menu , in menu option , switch to use : Toggle (Field + Multiple selection menu)
+    - In menu script :
+       ```Python
+       r = []
+       node = hou.pwd()
+       def menu():
+           r.extend([0, "A"])
+           r.extend([1, "B"])
+           r.extend([2, "C"])
+           return r
+       return menu()
+       
+       ```
       
    
    
