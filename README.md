@@ -131,33 +131,31 @@ hou.playbar.setFrameRange(1.0,100.0)
 
 ## 3 : Call a definition.
 - Call def in PythonModule of HDA :
-   Create a definition in PythonModule (scripts tab).
+   + Create a definition in PythonModule (scripts tab).
    
-   ```Python
-   def a_test(kwargs):
-       print("a_test")
-   
-   def b_test(kwargs):
-       print("b_test")
-   ```
-   [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/create_a_def.png)
-- Call def in a Python sop inside HDA :
-  
-  
+      ```Python
+      def a_test(kwargs):
+          print("a_test")
+      
+      def b_test(kwargs):
+          print("b_test")
+      ```
+      [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/create_a_def.png)
+       
+   + Then create a Button > Callback script (Work with any parameter like a float , int , toggle...)
+      ```Python
+      hou.pwd().hdaModule().a_test(kwargs)
+      ```
+      Can call a multi def like this :
+      
+      ```Python
+      hou.pwd().hdaModule().a_test(kwargs);hou.pwd().hdaModule().b_test(kwargs)
+      ```
+      [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/callback_script.png)
 
+- Call def in a Python Sop inside HDA :
+  
 > Dont know what "kwargs" meaning ? . [Read this](https://www.sidefx.com/docs/houdini/hom/locations.html)
-
-Then create a Button > Callback script (Work with any parameter like a float , int , toggle...)
-```Python
-hou.pwd().hdaModule().a_test(kwargs)
-```
-Can call a multi def like this :
-
-```Python
-hou.pwd().hdaModule().a_test(kwargs);hou.pwd().hdaModule().b_test(kwargs)
-```
-[Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/callback_script.png)
-
 ## 4 : Read paramater and get the value of parameter . 
 
 > In the HDA module’s code, you can get a reference to the HDA’s node name using:
