@@ -14,7 +14,7 @@
     <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/97AlexNguyen/Alex_Houdini_python">
   </a>
 </p>
-
+ 
 ## Authors
 
 - [@97AlexNguyen](https://github.com/97AlexNguyen)
@@ -35,11 +35,12 @@
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://unrealengine.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" alt="unreal" width="40" height="40"/> </a> <a href="https://www.sidefx.com/" target="_blank" rel="noreferrer"> <img src="https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/logo/sidefx_badge.png" alt="houdini" width="40" height="40"/> </a> </a> <a href="https://www.qt.io/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" width="40" height="40"/> </a></p>
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=97AlexNguyen&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
-</div>
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=97AlexNguyen&theme=nord&hide_border=true&include_all_commits=true&count_private=true)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=97AlexNguyen&theme=nord&hide_border=true)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=97AlexNguyen&theme=nord&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
 
-
+<h1 align="center"><img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="40px" /> "Okay, let's get started." </h1>
 
 # $\color[RGB]{122, 255, 253} A \ : \ Houdini \ HDA \ and \ Python \ Module$ 
 
@@ -131,8 +132,7 @@ hou.playbar.setFrameRange(1.0,100.0)
 
 ## 3 : Call a definition.
 - Call def in PythonModule of HDA :
-   + Create a definition in PythonModule (scripts tab). 
-   
+   + Create a definition in PythonModule (scripts tab).    
       ```Python
       def a_test(kwargs):
           print("a_test")
@@ -152,10 +152,31 @@ hou.playbar.setFrameRange(1.0,100.0)
       hou.pwd().hdaModule().a_test(kwargs);hou.pwd().hdaModule().b_test(kwargs)
       ```
       [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/callback_script.png)
+     
+> Dont know what "kwargs" meaning ? . [Read this](https://www.sidefx.com/docs/houdini/hom/locations.html)
 
 - Call def in a Python Sop inside HDA :
+   + Inside a HDA create a Python Sop and set name this node is "Python_test":
+      ```Python
+      def a_test():
+          print("a_test")
+      
+      def b_test():
+          print("b_test")
+      ```
+   + Then create a Button > Callback script (Work with any parameter like a float , int , toggle...)
+      ```Python
+      exec(hou.node("Python_test").parm("python").eval());a_test()
+      ```     
+   [Image](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/call_def_in_python_sop.png)
+
+  > "When calling a function in a Python SOP, it's not necessary to use the keyword argument 'kwargs'."
   
-> Dont know what "kwargs" meaning ? . [Read this](https://www.sidefx.com/docs/houdini/hom/locations.html)
+  > hou.node("Python_test") -> is name of python sop inside hda .
+  > parm("python" -> is name of python parameter in Python Sop .
+  > a_test() -> is definition .
+  
+
 ## 4 : Read paramater and get the value of parameter . 
 
 > In the HDA module’s code, you can get a reference to the HDA’s node name using:
@@ -216,7 +237,7 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
 ```
 [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/set_parm.png)
 
-## Python and Hda Parameter:
+## 7 : Python and Hda Parameter:
 - Button and Press Button :
   ![Button Image](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/button_image.png)
   + Press Button with callback script :
