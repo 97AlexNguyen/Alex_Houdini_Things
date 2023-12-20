@@ -40,7 +40,11 @@
 ![](https://github-readme-streak-stats.herokuapp.com/?user=97AlexNguyen&theme=nord&hide_border=true)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=97AlexNguyen&theme=nord&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
 
-
+<p align="center">
+    <img width="640" alt="Okay, let's get started." src="https://raw.githubusercontent.com/x0rzavi/github-readme-terminal/main/docs/assets/logo.png">
+    <br>
+    <b>✨ Elevate your GitHub Profile ReadMe with Minimalistic Retro Terminal GIFs 🚀</b>
+</p>
 
 # $\color[RGB]{122, 255, 253} A \ : \ Houdini \ HDA \ and \ Python \ Module$ 
 
