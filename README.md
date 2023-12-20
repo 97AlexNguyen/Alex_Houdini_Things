@@ -21,6 +21,12 @@
 
 <h3 align="center">🔭 This is a document that I created for my personal use. It includes Python scripts , VEX , python qt , Math , VFX like RBD sim , Vellum Sim , and working with unreal engine as well. You can find a lot of useful information here, such as Python scripts for working with HDA, tips and tricks for parameter settings like toggle and button strip and etc. Please note that this document is not yet complete, but I will update it whenever I have some free time </h3>
 
+
+> You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
+
+> All examples you can find in "Test HDA"
+>To use test packages, download the latest version of the repo and extract all files to the "packages" folder. All folders and files should be directly inside the "packages" folder, not within a subfolder of the "packages" folder.
+
  
 <h3 align="left">Connect with me:</h3>
 <p align="left">
@@ -41,11 +47,6 @@
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=97AlexNguyen&theme=nord&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
 
 <h1 align="center"><img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="40px" /> "Okay, let's get started." </h1>
-
-> You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
-
-> All examples you can find in "Test HDA"
->To use test packages, download the latest version of the repo and extract all files to the "packages" folder. All folders and files should be directly inside the "packages" folder, not within a subfolder of the "packages" folder.
 
 # $\color[RGB]{122, 255, 253} A \ : \ Houdini \ Packages \ and \ Python \ Script \ locations $ 
 
