@@ -332,11 +332,46 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
       ```
     - And this is result :
       ![Multiple_selection](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/gif/multiple_section_example.gif)
-    - Okay, I will show you how this method can be used through examples.
-      1 :
-         asd
-
-
+  + Okay, I will show you how this method can be used through examples.
+    > For example , we have an HDA which contains three objects . These objects can be any shape such as a box, sphere, or tube.
+    [See](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/objects_example_for_button_strip.png)
+    > The idea is to use a button strip to display which object we want.
+    - Create three switchs called is "sphere" , "tube" and "box"
+    - Each switch's first input should link to "null", and the second input should link to the object and finally is merge all switches   ![image]()
+    - Create a button strip parameter in HDA and set name is : "display_multip_object_button_strip"
+    - Go to the script tap of button strip:
+      ```Python
+         r = []         
+         node = hou.pwd()
+         def menu():
+             r.extend([0, "Sphere"])
+             r.extend([1, "Tube"])
+             r.extend([2, "Box"])
+             return r
+         return menu()
+      ```
+      
+    - In PythonModule :
+      ```Python
+      def display_multip_object(kwargs):
+          node = kwargs["node"]
+          bit_value = node.parm("display_multip_object_button_strip").eval()
+          list_object = ["sphere","tube","box"]
+          object_to_display = []
+          for i in range(1,len(list_object)+1):
+              if ( bit_value & (1<<i-1)):
+                  object_to_display.append(list_object[i-1])    
+          for z in list_object:
+              node.node(z).parm("input").set(0)            
+                  
+          for x in object_to_display:
+              node.node(x).parm("input").set(1)
+      ```
+    - In Callback script :
+      ```Python
+      hou.pwd().hdaModule().display_multip_object(kwargs)
+      ```
+      
     
 # $\color[RGB]{122, 255, 253} C \ : \ Python Qt \ for \ Houdini$ 
 
