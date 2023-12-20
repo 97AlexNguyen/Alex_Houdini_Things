@@ -275,14 +275,14 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
       ```
   + Single Selection :
     
-       In PythonModule :
+    - In PythonModule :
          ```Python
          def replace_button_strip(kwargs):
              node = kwargs["node"]
              value_select = node.parm("Button_strip_replace").eval()
              print(value_select)
          ```   
-       In Callback script of button strip :
+    - In Callback script of button strip :
          ```Python
          hou.pwd().hdaModule().replace_button_strip(kwargs)
          ```
