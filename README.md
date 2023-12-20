@@ -290,6 +290,7 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
        ![menu script](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/button_strip_single_select.png)
 
   + Multiple Selection :
+    
    - Working with multiple selections in a button strip is not as easy as working with a single selection. . The button strip returns a [Bit field]([https://rb.gy/1b6b2m](https://en.wikipedia.org/wiki/Bit_field#:~:text=A%20bit%20field%20is%20a,can%20be%20set%20or%20inspected.)) value , 
    - which means that we need to translate it into a more usable form . This is an example to show how we can do that :
    ![bitconvert](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/bitf_convert.png)
