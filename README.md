@@ -42,7 +42,7 @@
 
 <h1 align="center"><img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="40px" /> "Okay, let's get started." </h1>
 
-# $\color[RGB]{122, 255, 253} A \ : \ Houdini \ HDA \ and \ Python \ Module$ 
+# $\color[RGB]{122, 255, 253} A \ : \ Houdini \ Packages \ and \ Python \ Script \ locations $ 
 
 > You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
 
@@ -112,7 +112,7 @@ sys.path.append(python_lib)
 Test import module [See image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/test_load_module.png)
 
 
-### Something fun with 456.py
+## 3 : Something fun with 456.py
 How to turn on auto save , set fps , realtime , frame range... in every houdini session
 ```Python
 import sys
@@ -130,7 +130,10 @@ hou.setFps(30.0)
 hou.playbar.setFrameRange(1.0,100.0)
 ```
 
-## 3 : Call a definition.
+# $\color[RGB]{122, 255, 253} A \ : \ Houdini \ HDA \ and \ Python \ Module  $ 
+
+
+## 1 : Call a definition.
 - Call def in PythonModule of HDA :
    + Create a definition in PythonModule (scripts tab).    
       ```Python
@@ -177,7 +180,7 @@ hou.playbar.setFrameRange(1.0,100.0)
   > a_test() -> is definition .
   
 
-## 4 : Read paramater and get the value of parameter . 
+## 2 : Read paramater and get the value of parameter . 
 
 > In the HDA module’s code, you can get a reference to the HDA’s node name using:
 
@@ -197,7 +200,7 @@ hou.pwd().hdaModule()._kwargs(kwargs)
 ```
 [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/kwargs_node.png)
 
-## 5 :Get the value of parameter: 
+## 3 :Get the value of parameter: 
 > "All parameters need to be identified by their 'name' rather than their 'label'."
 
 Create float and int parameters named "float_test" and "int_test".
@@ -217,7 +220,7 @@ hou.pwd().hdaModule().load_parm(kwargs)
 [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/load_parm_hda.png)
 
 
-## 6 : Set the value of parameter: 
+## 4 : Set the value of parameter: 
 
 Create float and int parameters named "float_test_for_set" and "int_test_for_set".
 Now we are using value of float_test and int_test to set value for float_test_for_set and int_test_for_set.
@@ -237,7 +240,7 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
 ```
 [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/set_parm.png)
 
-## 7 : Python and Hda Parameter:
+## 5 : Python and Hda Parameter:
 - Button and Press Button :
   ![Button Image](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/button_image.png)
   + Press Button with callback script :
