@@ -237,7 +237,7 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
 ```
 [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/set_parm.png)
 
-## Python and Hda Parameter:
+## 7 : Python and Hda Parameter:
 - Button and Press Button :
   ![Button Image](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/button_image.png)
   + Press Button with callback script :
