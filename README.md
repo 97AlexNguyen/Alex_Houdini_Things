@@ -42,12 +42,12 @@
 
 <h1 align="center"><img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="40px" /> "Okay, let's get started." </h1>
 
-# $\color[RGB]{122, 255, 253} A \ : \ Houdini \ Packages \ and \ Python \ Script \ locations $ 
-
 > You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
 
 > All examples you can find in "Test HDA"
 >To use test packages, download the latest version of the repo and extract all files to the "packages" folder. All folders and files should be directly inside the "packages" folder, not within a subfolder of the "packages" folder.
+
+# $\color[RGB]{122, 255, 253} A \ : \ Houdini \ Packages \ and \ Python \ Script \ locations $ 
 
 ## 1 : Create a [Houdini packages](https://www.sidefx.com/docs/houdini/ref/plugins.html)
 
