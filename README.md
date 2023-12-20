@@ -279,8 +279,10 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
       ```   
    In Callback script of button strip :
       ```Python
+  
       hou.pwd().hdaModule().replace_button_strip(kwargs)
-      ```    
+      ```
+  
     ![menu script](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/button_strip_single_select.png)
 
 
