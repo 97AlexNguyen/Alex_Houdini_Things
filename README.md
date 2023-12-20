@@ -254,6 +254,25 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
     > hou.pwd().hdaModule().press_button(kwargs)
     > ```
     [Image](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/press_button_def.png)
+
+
+- Button Strip :
+  + Working with menu script :
+    In the button strip native to the menu > menu script :
+    ```Python
+    r = []
+    node = hou.pwd()
+    def menu():
+       r.extend([0, "A"])
+       r.extend([1, "B"])
+       r.extend([2, "C"])
+       return r
+    return menu()
+    ```
+  
+    ! [menu script](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/button_strip_single_select.png)
+
+
     
 # $\color[RGB]{122, 255, 253} B \ : \ Python Qt \ for \ Houdini$ 
 
