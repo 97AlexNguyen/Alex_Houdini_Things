@@ -129,20 +129,23 @@ hou.setFps(30.0)
 hou.playbar.setFrameRange(1.0,100.0)
 ```
 
-## 3 : Call a definition using callback script .
+## 3 : Call a definition.
+- Call def in PythonModule of HDA :
+   Create a definition in PythonModule (scripts tab).
+   
+   ```Python
+   def a_test(kwargs):
+       print("a_test")
+   
+   def b_test(kwargs):
+       print("b_test")
+   ```
+   [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/create_a_def.png)
+- Call def in a Python sop inside HDA :
+  
+  
 
-Create a definition in PythonModule (scripts tab).
-
-```Python
-def a_test(kwargs):
-    print("a_test")
-
-def b_test(kwargs):
-    print("b_test")
-```
-[Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/create_a_def.png)
-
-Dont know what "kwargs" meaning ? . [Read this](https://www.sidefx.com/docs/houdini/hom/locations.html)
+> Dont know what "kwargs" meaning ? . [Read this](https://www.sidefx.com/docs/houdini/hom/locations.html)
 
 Then create a Button > Callback script (Work with any parameter like a float , int , toggle...)
 ```Python
