@@ -260,8 +260,8 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
 
 
 - Button Strip :
-  + Working with menu script :
-    Create a button strip and set name is : "Button_strip_replace"
+   
+  + Create a button strip and set name is : "Button_strip_replace".
     In the button strip native to the menu > menu script :
       ```Python
       r = []
