@@ -131,8 +131,7 @@ hou.playbar.setFrameRange(1.0,100.0)
 
 ## 3 : Call a definition.
 - Call def in PythonModule of HDA :
-   + Create a definition in PythonModule (scripts tab). 
-   
+   + Create a definition in PythonModule (scripts tab).    
       ```Python
       def a_test(kwargs):
           print("a_test")
@@ -152,10 +151,30 @@ hou.playbar.setFrameRange(1.0,100.0)
       hou.pwd().hdaModule().a_test(kwargs);hou.pwd().hdaModule().b_test(kwargs)
       ```
       [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/callback_script.png)
+     
+> Dont know what "kwargs" meaning ? . [Read this](https://www.sidefx.com/docs/houdini/hom/locations.html)
 
 - Call def in a Python Sop inside HDA :
+   + Inside a HDA create a Python Sop and set name this node is "Python_test":
+      ```Python
+      def a_test():
+          print("a_test")
+      
+      def b_test():
+          print("b_test")
+      ```
+   + Then create a Button > Callback script (Work with any parameter like a float , int , toggle...)
+      ```Python
+      exec(hou.node("Python_test").parm("python").eval());a_test()
+      ```     
+   [Image](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/call_def_in_python_sop.png)
+
+  > When we call a def in a python sop , we dont need to using "kwargs"
+  > hou.node("Python_test") -> is name of python sop inside hda
+  > parm("python" -> is name of python parameter in Python Sop
+  > a_test() -> is definition
   
-> Dont know what "kwargs" meaning ? . [Read this](https://www.sidefx.com/docs/houdini/hom/locations.html)
+
 ## 4 : Read paramater and get the value of parameter . 
 
 > In the HDA module’s code, you can get a reference to the HDA’s node name using:
