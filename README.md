@@ -59,7 +59,7 @@ A Houdini Package is like a main document where you can store HDAs, toolbars, Py
 To create a Houdini package, you need to create a json file that saves the path to the package and loads it into Houdini. This json file is essential for using and sharing the package. The json file working with relative path so we dont need to care about name of pc or houdini version.
 
 
-Create a json file , :
+Create a json file :
 
 ```json
 {
@@ -157,7 +157,7 @@ hou.playbar.setFrameRange(1.0,100.0)
       ```
       [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/callback_script.png)
      
-> Dont know what "kwargs" meaning ? . [Read this](https://www.sidefx.com/docs/houdini/hom/locations.html)
+      > Dont know what "kwargs" meaning ? . [Read this](https://www.sidefx.com/docs/houdini/hom/locations.html)
 
 - Call def in a Python Sop inside HDA :
    + Inside a HDA create a Python Sop and set name this node is "Python_test":
@@ -332,7 +332,9 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
       ```
     - And this is result :
       ![Multiple_selection](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/gif/multiple_section_example.gif)
-    - Okay, I am done with the button strip now. I will update the examples and let you know when we can use this method. Trus me , it's very useful :D .
+    - Okay, I will show you how this method can be used through examples.
+      1 :
+         asd
 
 
     
