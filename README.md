@@ -292,10 +292,9 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
   + Multiple Selection :
    > Working with multiple selections in a button strip is not as easy as working with a single selection. . The button strip returns a [Bit field](https://rb.gy/1b6b2m) value , 
    > which means that we need to translate it into a more usable form . This is an example to show how we can do that :
-      +
+      + ![bitconvert](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/bitf_convert.png)
           
         bitfield_list = [1, 0, 1, 1, 0, 0, 1]
-        value = (bitfield_value $ (index<<index-1))
         for bit in bitfield_list:
            result = (result << 1) | bit
 
