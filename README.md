@@ -217,8 +217,12 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
 
 ## Python and Hda Parameter:
 - Button and Press Button :
-  + a
-
+  + Press Button with callback script :
+    > ```Python
+    > def press_button(kwargs):
+    >    node = kwargs["node"]
+    >    node.node("test_press").parm('execute').pressButton()
+    > ```
  
 # $\color[RGB]{122, 255, 253} B \ : \ Python Qt \ for \ Houdini$ 
 
