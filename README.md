@@ -24,7 +24,7 @@
 
 > You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
 
-> All examples you can find in "Test HDA"
+> All examples you can find in ["Test HDA"](https://github.com/97AlexNguyen/Alex_Houdini_Things/tree/58b5f0697b660aca390d42ff69e0f789f65f5117/hip_exams)
 >To use test packages, download the latest version of the repo and extract all files to the "packages" folder. All folders and files should be directly inside the "packages" folder, not within a subfolder of the "packages" folder.
 
  
@@ -337,7 +337,7 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
     [See](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/objects_example_for_button_strip.png)
     > The idea is to use a button strip to display which object we want.
     - Create three switchs called is "sphere" , "tube" and "box"
-    - Each switch's first input should link to "null", and the second input should link to the object and finally is merge all switches   ![image]()
+    - Each switch's first input should link to "null", and the second input should link to the object and finally is merge all switches ![image](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/stubebox.png)
     - Create a button strip parameter in HDA and set name is : "display_multip_object_button_strip"
     - Go to the script tap of button strip:
       ```Python
@@ -371,6 +371,9 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
       ```Python
       hou.pwd().hdaModule().display_multip_object(kwargs)
       ```
+      ![Image](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/gif/multip_sect_object.gif)
+  + I will update two examples in the future -- one for working with a for loop feedback and another for dynamic UI.
+  + $\mathscr{\color{red}{Updating...}}$
       
     
 # $\color[RGB]{122, 255, 253} C \ : \ Python Qt \ for \ Houdini$ 
@@ -386,6 +389,8 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
 
 
 # $\color[RGB]{122, 255, 253} G \ : \ Houdini \ Math$ 
+
+
 
 
 $\mathscr{\color{red}{Updating...}}$
