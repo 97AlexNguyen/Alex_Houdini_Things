@@ -218,12 +218,20 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
 ## Python and Hda Parameter:
 - Button and Press Button :
   + Press Button with callback script :
+    In PythonModule of HDA
     > ```Python
     > def press_button(kwargs):
+    >    ## kwargs['node'] is the top-level node, e.g. if this is wrapped in an HDA
     >    node = kwargs["node"]
+    >    ## "test_press" is a node located within an HDA. The name of the button parameter inside the node is "execute".
     >    node.node("test_press").parm('execute').pressButton()
     > ```
- 
+    In callback script of button :
+    > ```Python
+    > hou.pwd().hdaModule().press_button(kwargs)
+    > ```
+    [Image](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/press_button_def.png)
+    
 # $\color[RGB]{122, 255, 253} B \ : \ Python Qt \ for \ Houdini$ 
 
 
