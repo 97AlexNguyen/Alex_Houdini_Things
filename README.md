@@ -258,18 +258,29 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
 
 - Button Strip :
   + Working with menu script :
+    Create a button strip and set name is : "Button_strip_replace"
     In the button strip native to the menu > menu script :
-    ```Python
-    r = []
-    node = hou.pwd()
-    def menu():
-       r.extend([0, "A"])
-       r.extend([1, "B"])
-       r.extend([2, "C"])
-       return r
-    return menu()
-    ```
-  
+      ```Python
+      r = []
+      node = hou.pwd()
+      def menu():
+         r.extend([0, "A"])
+         r.extend([1, "B"])
+         r.extend([2, "C"])
+         return r
+      return menu()
+      ```
+    In PythonModule :
+      ```Python
+      def replace_button_strip(kwargs):
+          node = kwargs["node"]
+          value_select = node.parm("Button_strip_replace").eval()
+          print(value_select)
+      ```   
+   In Callback script of button strip :
+      ```Python
+      hou.pwd().hdaModule().replace_button_strip(kwargs)
+      ```    
     ![menu script](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/button_strip_single_select.png)
 
 
