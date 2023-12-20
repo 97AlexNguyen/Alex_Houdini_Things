@@ -270,7 +270,7 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
     return menu()
     ```
   
-    ! [menu script](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/button_strip_single_select.png)
+    ![menu script](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/button_strip_single_select.png)
 
 
     
