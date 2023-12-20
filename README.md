@@ -16,10 +16,16 @@
 </p>
    
 ## Authors 
-
+ 
 - [@97AlexNguyen](https://github.com/97AlexNguyen)
 
 <h3 align="center">🔭 This is a document that I created for my personal use. It includes Python scripts , VEX , python qt , Math , VFX like RBD sim , Vellum Sim , and working with unreal engine as well. You can find a lot of useful information here, such as Python scripts for working with HDA, tips and tricks for parameter settings like toggle and button strip and etc. Please note that this document is not yet complete, but I will update it whenever I have some free time </h3>
+
+
+> You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
+
+> All examples you can find in "Test HDA"
+>To use test packages, download the latest version of the repo and extract all files to the "packages" folder. All folders and files should be directly inside the "packages" folder, not within a subfolder of the "packages" folder.
 
  
 <h3 align="left">Connect with me:</h3>
@@ -44,11 +50,6 @@
 
 # $\color[RGB]{122, 255, 253} A \ : \ Houdini \ Packages \ and \ Python \ Script \ locations $ 
 
-> You can find many Python scripts for Houdini Digital Assets (HDAs) here, such as callback scripts, working with button strips, toggles, dynamic UI, and PyQt5 as well.
-
-> All examples you can find in "Test HDA"
->To use test packages, download the latest version of the repo and extract all files to the "packages" folder. All folders and files should be directly inside the "packages" folder, not within a subfolder of the "packages" folder.
-
 ## 1 : Create a [Houdini packages](https://www.sidefx.com/docs/houdini/ref/plugins.html)
 
 >This is a method that enables loading of specific Python modules to Houdini without requiring any modification to the system environment variables. It utilizes a relative path technique which allows it to function on any computer and with any version of Houdini, as long as the Python version being used is compatible with that particular version of Houdini. Additionally, this method is easier to manage, especially when there are multiple Houdini packages involved.
@@ -58,7 +59,7 @@ A Houdini Package is like a main document where you can store HDAs, toolbars, Py
 To create a Houdini package, you need to create a json file that saves the path to the package and loads it into Houdini. This json file is essential for using and sharing the package. The json file working with relative path so we dont need to care about name of pc or houdini version.
 
 
-Create a json file , :
+Create a json file :
 
 ```json
 {
@@ -112,7 +113,7 @@ sys.path.append(python_lib)
 Test import module [See image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/test_load_module.png)
 
 
-## 3 : Something fun with 456.py
+## 3 : Somethings fun with 456.py
 How to turn on auto save , set fps , realtime , frame range... in every houdini session
 ```Python
 import sys
@@ -130,7 +131,7 @@ hou.setFps(30.0)
 hou.playbar.setFrameRange(1.0,100.0)
 ```
 
-# $\color[RGB]{122, 255, 253} A \ : \ Houdini \ HDA \ and \ Python \ Module  $ 
+# $\color[RGB]{122, 255, 253} B \ : \ Houdini \ HDA \ and \ Python \ Module  $ 
 
 
 ## 1 : Call a definition.
@@ -156,7 +157,7 @@ hou.playbar.setFrameRange(1.0,100.0)
       ```
       [Image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/callback_script.png)
      
-> Dont know what "kwargs" meaning ? . [Read this](https://www.sidefx.com/docs/houdini/hom/locations.html)
+      > Dont know what "kwargs" meaning ? . [Read this](https://www.sidefx.com/docs/houdini/hom/locations.html)
 
 - Call def in a Python Sop inside HDA :
    + Inside a HDA create a Python Sop and set name this node is "Python_test":
@@ -294,12 +295,13 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
     - Working with multiple selections in a button strip is not as easy as working with a single selection. . The button strip returns a [Bit field]([https://rb.gy/1b6b2m](https://en.wikipedia.org/wiki/Bit_field#:~:text=A%20bit%20field%20is%20a,can%20be%20set%20or%20inspected.)) value , 
     - which means that we need to translate it into a more usable form . This is an example to show how we can do that :
    ![bitconvert](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/bitf_convert.png)
-          
+      ```Python
         bitfield_list = [1, 0, 1, 1, 0, 0, 1]
         for bit in bitfield_list:
            result = (result << 1) | bit
-  
-    - Create a button strip and set name is : "Multiple_Select_Button" .
+      ```
+        
+    - Create a button strip and set name is : "multiple_button_strip" .
     - Native to the menu , in menu option , switch to use : Toggle (Field + Multiple selection menu)
     - In menu script :
        ```Python
@@ -313,26 +315,42 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
        return menu()
        
        ```
-      
-   
-   
-
+    - In PythonModule :
+       ```Python
+      def multiple_button_strip(kwargs):
+          node = kwargs["node"]
+          bit_value = node.parm("multiple_button_strip").eval()
+          list_selcted = []
+          for i in range(1,4):
+              if ( bit_value & (1<<i-1)):
+                  list_selcted.append(i-1)
+          print(list_selcted)    
+       ```     
+    - In Callback script at button strip :
+      ```Python
+         hou.pwd().hdaModule().multiple_button_strip(kwargs)
+      ```
+    - And this is result :
+      ![Multiple_selection](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/gif/multiple_section_example.gif)
+    - Okay, I will show you how this method can be used through examples.
+      1 :
+         asd
 
 
     
-# $\color[RGB]{122, 255, 253} B \ : \ Python Qt \ for \ Houdini$ 
+# $\color[RGB]{122, 255, 253} C \ : \ Python Qt \ for \ Houdini$ 
 
 
-# $\color[RGB]{122, 255, 253} C \ : \ RBD \ in \ Houdini$ 
+# $\color[RGB]{122, 255, 253} D \ : \ RBD \ in \ Houdini$ 
 
 
-# $\color[RGB]{122, 255, 253} D \ : \ Vellum \ sim \ in \ Houdini$ 
+# $\color[RGB]{122, 255, 253} E \ : \ Vellum \ sim \ in \ Houdini$ 
 
 
-# $\color[RGB]{122, 255, 253} E \ : \ Houdini \ for \ Unreal Engine$ 
+# $\color[RGB]{122, 255, 253} F \ : \ Houdini \ for \ Unreal Engine$ 
 
 
-# $\color[RGB]{122, 255, 253} F \ : \ Houdini \ Math$ 
+# $\color[RGB]{122, 255, 253} G \ : \ Houdini \ Math$ 
 
 
 $\mathscr{\color{red}{Updating...}}$
