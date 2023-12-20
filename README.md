@@ -171,9 +171,9 @@ hou.playbar.setFrameRange(1.0,100.0)
 
   > "When calling a function in a Python SOP, it's not necessary to use the keyword argument 'kwargs'."
   
-  > hou.node("Python_test") -> is name of python sop inside hda
-  > parm("python" -> is name of python parameter in Python Sop
-  > a_test() -> is definition
+  > hou.node("Python_test") -> is name of python sop inside hda .
+  > parm("python" -> is name of python parameter in Python Sop .
+  > a_test() -> is definition .
   
 
 ## 4 : Read paramater and get the value of parameter . 
