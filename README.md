@@ -131,7 +131,7 @@ hou.playbar.setFrameRange(1.0,100.0)
 
 ## 3 : Call a definition.
 - Call def in PythonModule of HDA :
-   + Create a definition in PythonModule (scripts tab).
+   + Create a definition in PythonModule (scripts tab). 
    
       ```Python
       def a_test(kwargs):
