@@ -294,11 +294,12 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
     - Working with multiple selections in a button strip is not as easy as working with a single selection. . The button strip returns a [Bit field]([https://rb.gy/1b6b2m](https://en.wikipedia.org/wiki/Bit_field#:~:text=A%20bit%20field%20is%20a,can%20be%20set%20or%20inspected.)) value , 
     - which means that we need to translate it into a more usable form . This is an example to show how we can do that :
    ![bitconvert](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/bitf_convert.png)
-          
+      ```Python
         bitfield_list = [1, 0, 1, 1, 0, 0, 1]
         for bit in bitfield_list:
            result = (result << 1) | bit
-  
+      ```
+        
     - Create a button strip and set name is : "Multiple_Select_Button" .
     - Native to the menu , in menu option , switch to use : Toggle (Field + Multiple selection menu)
     - In menu script :
@@ -313,9 +314,23 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
        return menu()
        
        ```
-      
-   
-   
+    - In PythonModule :
+       ```Python
+      def multiple_button_strip(kwargs):
+          node = kwargs["node"]
+          bit_value = node.parm("Multiple_Select_Button").eval()
+          list_selcted = []
+          for i in range(1,4):
+              if ( bit_value & (1<<i-1)):
+                  list_selcted.append(i-1)
+          print(list_selcted)    
+       ```     
+    - In Callback script at button strip :
+      ```Python
+         hou.pwd().hdaModule().multiple_button_strip(kwargs)
+      ```
+    - And this is result :
+      [Multiple_selection](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/gif/multiple_section_example.gif)
 
 
 
