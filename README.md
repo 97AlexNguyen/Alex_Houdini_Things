@@ -300,7 +300,7 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
            result = (result << 1) | bit
       ```
         
-    - Create a button strip and set name is : "Multiple_Select_Button" .
+    - Create a button strip and set name is : "multiple_button_strip" .
     - Native to the menu , in menu option , switch to use : Toggle (Field + Multiple selection menu)
     - In menu script :
        ```Python
@@ -318,7 +318,7 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
        ```Python
       def multiple_button_strip(kwargs):
           node = kwargs["node"]
-          bit_value = node.parm("Multiple_Select_Button").eval()
+          bit_value = node.parm("multiple_button_strip").eval()
           list_selcted = []
           for i in range(1,4):
               if ( bit_value & (1<<i-1)):
@@ -331,7 +331,7 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
       ```
     - And this is result :
       ![Multiple_selection](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/gif/multiple_section_example.gif)
-
+    - Okay, I am done with the button strip now. I will update the examples and let you know when we can use this method. Trus me , it's very useful :D .
 
 
     
