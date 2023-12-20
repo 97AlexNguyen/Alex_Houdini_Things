@@ -112,7 +112,7 @@ sys.path.append(python_lib)
 Test import module [See image](https://github.com/97AlexNguyen/Alex_Houdini_python/blob/main/tutorial_image/test_load_module.png)
 
 
-## 3 : Something fun with 456.py
+## 3 : Somethings fun with 456.py
 How to turn on auto save , set fps , realtime , frame range... in every houdini session
 ```Python
 import sys
@@ -130,7 +130,7 @@ hou.setFps(30.0)
 hou.playbar.setFrameRange(1.0,100.0)
 ```
 
-# $\color[RGB]{122, 255, 253} A \ : \ Houdini \ HDA \ and \ Python \ Module  $ 
+# $\color[RGB]{122, 255, 253} B \ : \ Houdini \ HDA \ and \ Python \ Module  $ 
 
 
 ## 1 : Call a definition.
@@ -335,19 +335,19 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
 
 
     
-# $\color[RGB]{122, 255, 253} B \ : \ Python Qt \ for \ Houdini$ 
+# $\color[RGB]{122, 255, 253} C \ : \ Python Qt \ for \ Houdini$ 
 
 
-# $\color[RGB]{122, 255, 253} C \ : \ RBD \ in \ Houdini$ 
+# $\color[RGB]{122, 255, 253} D \ : \ RBD \ in \ Houdini$ 
 
 
-# $\color[RGB]{122, 255, 253} D \ : \ Vellum \ sim \ in \ Houdini$ 
+# $\color[RGB]{122, 255, 253} E \ : \ Vellum \ sim \ in \ Houdini$ 
 
 
-# $\color[RGB]{122, 255, 253} E \ : \ Houdini \ for \ Unreal Engine$ 
+# $\color[RGB]{122, 255, 253} F \ : \ Houdini \ for \ Unreal Engine$ 
 
 
-# $\color[RGB]{122, 255, 253} F \ : \ Houdini \ Math$ 
+# $\color[RGB]{122, 255, 253} G \ : \ Houdini \ Math$ 
 
 
 $\mathscr{\color{red}{Updating...}}$
