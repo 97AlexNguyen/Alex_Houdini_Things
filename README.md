@@ -373,23 +373,31 @@ hou.pwd().hdaModule().set_parm_value(kwargs)
       ```
       ![Image](https://github.com/97AlexNguyen/Alex_Houdini_Things/blob/main/tutorial_image/gif/multip_sect_object.gif)
   + I will update two examples in the future -- one for working with a for loop feedback and another for dynamic UI.
+ 
+
+# 7 : Selection Geometry :
+  
+
+
+
+
+
   + $\mathscr{\color{red}{Updating...}}$
       
     
+# $\color[RGB]{122, 255, 253} C \ : \ Vex $ 
+
+   
+
+
+
 # $\color[RGB]{122, 255, 253} C \ : \ Python Qt \ for \ Houdini$ 
 
 
 # $\color[RGB]{122, 255, 253} D \ : \ RBD \ in \ Houdini$ 
 
 
-# $\color[RGB]{122, 255, 253} E \ : \ Vellum \ sim \ in \ Houdini$ 
-
-
-# $\color[RGB]{122, 255, 253} F \ : \ Houdini \ for \ Unreal Engine$ 
-
-
-# $\color[RGB]{122, 255, 253} G \ : \ Houdini \ Math$ 
-   
+    
 
 
 
