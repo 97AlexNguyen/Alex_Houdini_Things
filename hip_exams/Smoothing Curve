@@ -1,0 +1,37 @@
+float smoothing_Factor = chf("smooth_fractor");
+int num_pts = chi("num_pts");
+float angle_smooth_threshold = chf("angle_threshold");
+for (int pt = 1; pt < npoints(0)-1; ++pt) {
+    vector pos = point(0, "P", pt);
+    vector avg_pos = {0,0,0};
+    int count = 0;
+    int smooth = 0;
+    for (int i = -num_pts; i <= num_pts; ++i) {
+        if (i == 0) continue;
+        int neighbourPt = pt + i;
+        if (neighbourPt > 0 && neighbourPt < npoints(0)-1) {
+            vector prev = point(0, "P", neighbourPt - 1);
+            vector next = point(0, "P", neighbourPt + 1);
+
+            vector vec1 = normalize(pos - prev);
+            vector vec2 = normalize(next - pos);
+
+            float angle = acos(clamp(dot(vec1, vec2), -1, 1));
+            if (angle > angle_smooth_threshold) {
+                smooth = 1;
+                break;
+            }
+        }
+    }
+    if (smooth) {
+        for (int j = -num_pts; j <= num_pts; ++j) {
+            int neighbourPt = pt + j;
+            if (neighbourPt >= 0 && neighbourPt < npoints(0)) {
+                avg_pos += point(0, "P", neighbourPt);
+                count++;
+            }
+        }        
+        avg_pos /= count;
+        setpointattrib(0, "P", pt, lerp(pos, avg_pos, smoothing_Factor), "set");
+    }
+}
