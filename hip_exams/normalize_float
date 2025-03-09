@@ -1,0 +1,107 @@
+
+void find_min_max(int geo; int npts; string att_name; export float min_val; export float max_val)
+{
+    min_val = point(geo, att_name, 0);
+    max_val = min_val;
+    
+    for (int i = 1; i < npts; i++)
+    {
+        float value = point(geo, att_name, i);
+        if (value < min_val)
+            min_val = value;
+        if (value > max_val)
+            max_val = value;
+    }
+}
+
+
+float normalize_value(float value; float min_val; float max_val)
+{
+    if (max_val == min_val)
+        return 0.0;
+    return fit(value, min_val, max_val, 0, 1);
+}
+
+void normalize_attribute(int geo; string att_in; string att_out; float new_min; float new_max; int use_ramp)
+{
+    int npts = npoints(geo);
+    float orig_min, orig_max;
+    find_min_max(geo, npts, att_in, orig_min, orig_max);
+    
+    if(strlen(att_out) == 0)
+    {
+        att_out = sprintf("normalized_%s", att_in);
+    }
+    
+    for (int i = 0; i < npts; i++)
+    {
+        float value = point(geo, att_in, i);
+        float norm = normalize_value(value, orig_min, orig_max);
+        float final_value = 0;
+        
+        if(use_ramp)
+        {
+            float ramped = chramp("ramp", norm);
+            float ramp_min = chramp("ramp", 0);
+            float ramp_max = chramp("ramp", 1);
+            final_value = fit(ramped, ramp_min, ramp_max, new_min, new_max);
+        }
+        else
+        {
+            final_value = fit(norm, 0, 1, new_min, new_max);
+        }
+
+        setpointattrib(geo, att_out, i, final_value, "set");
+    }
+}
+
+void compute_percent(int geo; string source_att; string target_att)
+{
+    int npts = npoints(geo);
+    float min_val = point(geo, source_att, 0);
+    float max_val = min_val;
+    for (int i = 1; i < npts; i++)
+    {
+        float val = point(geo, source_att, i);
+        if(val < min_val)
+            min_val = val;
+        if(val > max_val)
+            max_val = val;
+    }
+    
+    for (int i = 0; i < npts; i++)
+    {
+        float val = point(geo, source_att, i);
+        float percent = (max_val == min_val) ? 0 : ((val - min_val) / (max_val - min_val)) * 100;
+        setpointattrib(geo, target_att, i, percent, "set");
+    }
+}
+
+
+string att_in = chs("input_attribute");    
+string att_out = chs("output_attribute");     
+
+int active = chi("active");
+if(active)
+{
+    float new_min = chf("new_min");
+    float new_max = chf("new_max");
+    int use_ramp = chi("use_ramp");
+
+
+    if(strlen(att_out) == 0)
+    {
+        att_out = sprintf("normalized_%s", att_in);
+    }
+
+    normalize_attribute(0, att_in, att_out, new_min, new_max, use_ramp);
+}
+
+int compute_percent_flag = chi("compute_percent");
+if(compute_percent_flag)
+{
+
+    string raw_percent_att = sprintf("percent_%s", att_in);
+    compute_percent(0, att_in, raw_percent_att);
+
+}
